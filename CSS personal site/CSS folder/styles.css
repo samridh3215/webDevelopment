@@ -1,3 +1,33 @@
 body{
-    background-color:rgb(211, 0, 0)
+    background-color: palegoldenrod;
+    
+    
+}
+h1{
+    margin-bottom: 0px;
+}
+
+.myName{
+    text-align: center;
+    color: white;
+    margin-top: 1px;
+    display: inline;
+}
+.mountain{
+    display: block;  
+    position: absolute;
+    margin-bottom: 20px;   
+    
+}   
+.intro{
+    
+    display: inline-block;
+    margin-left: 100px;
+}
+h1{
+    display: inline;
+}
+.cloud{
+    display: block;
+    margin: 30px 30px 30px 30px;
 }

@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(lightblue, white);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.count{
+    margin: auto auto auto auto;
+    border-style: dotted;
+    border-width: 2px;
+    background-color: greenyellow
+}
+
+.form{
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+
+    background-color: lightgrey;
+}
+
+.sub{
+    background-color: greenyellow;
+}
+.res{
+    background-color: greenyellow;
+}
+.mainLogo{
+    display: block;
+    margin: auto auto  auto auto;
+}
+h2{
+    position: relative;
+    display: inline;
+}
+
+.surveyTitle{
+    margin-bottom: 20em;;
+}
+

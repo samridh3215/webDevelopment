@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PESU student survey</title>
+    <link rel="icon" href="download.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <img class = "mainLogo"src="Screenshot 2022-08-29 084922.png" alt="PESU logo">
+    <h2>STUDENT COUNT INFORMATION </h2>
+    <table class = "count" border = "1" >
+        <thead>
+          <tr>
+            <th>Campus</th>
+            <th>Course</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>RR</td>
+            <td><table>
+                <tr>B.tech</tr><br>
+                <tr>M.tech</tr>
+            </table></td>
+            <td>400 <br>200</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>EC</td>
+            <td><table>
+                <tr>B.tech</tr><br>
+                <tr>M.tech</tr>
+            </table></td>
+            <td>300 <br> 150</td>
+          </tr>
+        </tfoot>
+    </table>
+    <h2 class = "surveyTitle" ><b>SURVEY FORM</b></h2>
+    <div class="form">
+      <form>
+          <div class="name">
+          <label>Name</label><br>
+          <input type="text" name="Name" value="" placeholder="Enter Your Name" required size="40"><br>
+          </div>
+          <div class="mail">
+          <label>Email</label><br>
+          <input type="email" name="Email" value="" placeholder="Enter Your email"  required size="40"><br>
+          </div>
+          <div class="age">
+          <label>Age</label><br>
+          <input type="number" name="Age" value="" placeholder="Enter your age"  required size="40"><br>
+          </div>
+          <div class="num">
+          <label for="">Phone Number</label><br>
+          <input type="tel" name="Phone Number" id="" pattern="[0-9]{10}"  required placeholder="Enter your number" size="40"><br>
+          </div>
+          <div class="course">
+          <label>Which Option Best Describes you?</label><br>
+          <select name="Select course">
+              <option>Select Course</option>
+              <option value="first">B.Tech(RR Campus)</option>
+              <option value="second">M.Tech(RR Campus)</option>
+              <option value="third">B.Tech(EC Campus)</option>
+              <option value="fourth">M.Tech(EC Campus)</option>
+          </select><br>
+          </div>
+          <div class="minor">
+          <label>Will you take up minor courses?</label><br>
+          <input type="radio" name="minor" id="">
+          <label for="Yes">Yes</label><br>
+          <input type="radio" name="minor" id="">
+          <label for="No">No</label><br>
+          <input type="radio" name="minor" id="">
+          <label for="Maybe">Maybe</label><br>
+          </div>
+          <div class="lang">
+          <label>Languages known</label><br>
+          <input type="checkbox" name="C" id="">
+          <label for="C">C</label><br>
+          <input type="checkbox" name="C++" id="">
+          <label for="C++">C++</label><br>
+          <input type="checkbox" name="Java" id="">
+          <label for="Java">Java</label><br>
+          <input type="checkbox" name="Python" id="">
+          <label for="Python">Python</label><br>
+          </div>
+          <div class="text">
+          <label>Any comments or Suggestions</label><br>
+          <textarea name="text" id="" cols="30" rows="10" placeholder="Enter your comments here"></textarea><br>
+          </div>
+          <button class="sub" type="submit" >Submit</button>
+          <button class="res" type="reset" >Reset</button>
+      </form>
+  </div>
+  <script>
+    document.querySelector("form").addEventListener("submit",function(){
+        alert("succesfully submitted!")
+    })
+    document.querySelectorAll("button")[1].addEventListener("click",function(){
+        alert("succesfully reset!")
+    })
+</script>
+
+
+</body>
+</html>
